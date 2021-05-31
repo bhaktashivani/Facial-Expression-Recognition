@@ -1,15 +1,26 @@
-# took this file from Assignment 3 start code. Thank you. 
-wget https://cmp.felk.cvut.cz/~tylecr1/facade/CMP_facade_DB_base.zip
-wget https://cmp.felk.cvut.cz/~tylecr1/facade/CMP_facade_DB_extended.zip
+# took this file from Assignment 3 start code and edited it to our needs. Thank you. 
+# By running this file one can download the dataset required for the project
+# We used the Tifts dataset. Links to all their data can be found here: https://www.kaggle.com/kpvisionlab/tufts-face-database
+# Their Website is http://tdface.ece.tufts.edu/
+# http://tdface.ece.tufts.edu/downloads/
 
-mkdir dataset
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set1.zip
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set2.zip
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set3.zip
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set4.zip
 
-unzip CMP_facade_DB_base.zip -d dataset/
+mkdir Tufts
+mkdir Tufts/Set1
+mkdir Tufts/Set2
+# mkdir Tufts/Set3
+# mkdir Tufts/Set4
 
-rm dataset/label_names.txt
-rm dataset/readme.txt
+unzip TD_RGB_A_Set1.zip -d Tufts/Set1/
+unzip TD_RGB_A_Set2.zip -d Tufts/Set2/
+# unzip TD_RGB_A_Set3.zip -d Tufts/
+# unzip TD_RGB_A_Set4.zip -d Tufts/
 
-unzip CMP_facade_DB_extended.zip -d dataset/
-
-rm CMP_facade_DB_base.zip
-rm CMP_facade_DB_extended.zip
+# rm TD_RGB_A_Set1.zip
+# rm TD_RGB_A_Set2.zip
+# rm TD_RGB_A_Set3.zip
+# rm TD_RGB_A_Set4.zip
