@@ -4,23 +4,58 @@
 # Their Website is http://tdface.ece.tufts.edu/
 # http://tdface.ece.tufts.edu/downloads/
 
+
+#######################################################################################
+####################### For getting RGB Around Dataset ################################
+#######################################################################################
 # wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set1.zip
 # wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set2.zip
 # wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set3.zip
 # wget http://tdface.ece.tufts.edu/downloads/TD_RGB_A/TD_RGB_A_Set4.zip
 
-mkdir Tufts
-mkdir Tufts/Set1
-mkdir Tufts/Set2
+
+# mkdir Tufts
+# mkdir Tufts/Set1
+# mkdir Tufts/Set2
 # mkdir Tufts/Set3
 # mkdir Tufts/Set4
 
-unzip TD_RGB_A_Set1.zip -d Tufts/Set1/
-unzip TD_RGB_A_Set2.zip -d Tufts/Set2/
-# unzip TD_RGB_A_Set3.zip -d Tufts/
-# unzip TD_RGB_A_Set4.zip -d Tufts/
+# unzip TD_RGB_A_Set1.zip -d Tufts/Set1/
+# unzip TD_RGB_A_Set2.zip -d Tufts/Set2/
+# unzip TD_RGB_A_Set3.zip -d Tufts/Set3/
+# unzip TD_RGB_A_Set4.zip -d Tufts/Set4/
+
 
 # rm TD_RGB_A_Set1.zip
 # rm TD_RGB_A_Set2.zip
 # rm TD_RGB_A_Set3.zip
 # rm TD_RGB_A_Set4.zip
+
+
+#######################################################################################
+####################### For getting RGB Expression Data ###############################
+#######################################################################################
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set1.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set2.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set3.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set4.zip
+
+mkdir dataset
+mkdir dataset/Set1
+mkdir dataset/Set2
+mkdir dataset/Set3
+mkdir dataset/Set4
+
+
+unzip TD_RGB_E_Set1.zip -d dataset/Set1/
+unzip TD_RGB_E_Set2.zip -d dataset/Set2/
+unzip TD_RGB_E_Set1.zip -d dataset/Set3/
+unzip TD_RGB_E_Set2.zip -d dataset/Set4/
+
+mv TD_RGB_E_Set1.zip dataset/
+mv TD_RGB_E_Set2.zip dataset/
+mv TD_RGB_E_Set3.zip dataset/
+mv TD_RGB_E_Set4.zip dataset/
+
+
+
