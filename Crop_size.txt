@@ -1,0 +1,75 @@
+person = 1 
+box = (1500, 200, width-1600, height-800)
+
+person = 2 
+box = (1550, 400, width-1500, height-700)
+
+person = 3 
+box = (1400, 200, width-1550, height-400)
+
+person = 4
+box = (1650, 150, width-1430, height-1000)
+
+person = 5
+box = (1700, 450, width-1400, height-850)
+
+person = 6
+box = (1300, 300, width-1400, height-700)
+
+person = 7
+box = (1450, 400, width-1450, height-600)
+
+person = 8
+box = (1650, 850, width-1400, height-450)
+
+person = 9
+box = (1250, 400, width-1400, height-800)
+
+person = 10 
+box = (1500, 350, width-1300, height-1000)
+
+person = 11 
+box = (1900, 350, width-1300, height-750)
+
+person = 12 
+box = (1700, 400, width-1350, height-800)
+
+person = 13 
+box = (1700, 400, width-1350, height-700)
+
+person = 14
+box = (1600, 350, width-1400, height-900)
+
+person = 15
+box = (1650, 400, width-1450, height-700)
+
+person = 16
+box = (1300, 350, width-1450, height-800)
+
+person = 17
+box = (1450, 450, width-1300, height-800)
+
+person = 18
+box = (1200, 350, width-1350, height-650)
+
+person = 19
+box = (1600, 400, width-1400, height-700)
+
+person = 20
+box = (1600, 150, width-1400, height-850)
+
+person = 21 
+box = (1650, 200, width-1350, height-700)
+
+person = 22 
+box = (1450, 150, width-1350, height-600)
+
+person = 23 
+box = (1700, 550, width-1350, height-600)
+
+person = 24
+box = (1500, 300, width-1450, height-600)
+
+person = 25
+box = (1250, 350, width-1450, height-600)
+
