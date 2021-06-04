@@ -43,15 +43,19 @@ class WoodNet(nn.Module):
         )
         
     def forward(self, x):
-        print(type(x))
-        x = self.conv2d(x)
-        x = self.maxpool(x)
-        x = self.relu(x)
+
+#         x = self.conv2d(x)
+#         x = self.maxpool(x)
+#         x = self.relu(x)
         x = self.layers(x)
-        print(x.shape)
+        
+ 
         x = x.view(x.size(0), -1)
-        print(x.shape)
+#         print(x.shape)
         x = self.classifier(x)
         scores = x
         return scores
+            
+            
+            
     
