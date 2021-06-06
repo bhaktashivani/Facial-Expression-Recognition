@@ -7,7 +7,13 @@ The dataset can be downloaded by running the script provided in the folder:
 ```
 bash get_dataset.sh
 ```
-
+## Saving the Cropped and Resized Images. 
+- Create a folder cropped folder 
+- Run the script PrepData.py. This will save the cropped and resized images into the cropped folder. 
+- Can use the following command in Terminal. 
+```
+python PrepData.py
+```
 We used the Tufts Face Dataset from [1] 
 chnage
 ### Dataset
