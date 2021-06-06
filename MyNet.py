@@ -19,8 +19,8 @@ class MyNet(nn.Module):
         self.layers = nn.Sequential(
             nn.Conv2d(3, self.channel_1, (3,3), padding = 1),
             nn.BatchNorm2d(32),
-
             nn.LeakyReLU(inplace=True),
+            
             nn.Conv2d(self.channel_1, self.channel_2, (3,3), padding = 1),
             nn.LeakyReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
