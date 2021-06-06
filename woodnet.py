@@ -51,7 +51,6 @@ class WoodNet(nn.Module):
         
  
         x = x.view(x.size(0), -1)
-#         print(x.shape)
         x = self.classifier(x)
         scores = x
         return scores
