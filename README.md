@@ -1,4 +1,4 @@
-# ECE285_Project: Face Recognization 
+# ECE285_Project: Face Expression Recognization 
 
 ## Getting the Dataset (Tufts Face Database 2D RGB Expression (TDRGBE))
 This dataset contains 250 images. It has 5 images from 50 different people. These 5 images are of 5 different expressions. (Neutral Face, Similing Face, Eyes Closed, Surprised, and with sunglasses.) Even thought these are not all "Expressions", we couldn't find any other dataset that we liked.
