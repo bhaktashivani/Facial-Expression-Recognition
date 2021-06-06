@@ -12,25 +12,25 @@
 #######################################################################################
 wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set1.zip
 wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set2.zip
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set3.zip
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set4.zip
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set3.zip
+# wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set4.zip
 
 mkdir dataset
-mkdir dataset/Set1
-mkdir dataset/Set2
-mkdir dataset/Set3
-mkdir dataset/Set4
+# mkdir dataset/Set1
+# mkdir dataset/Set2
+# mkdir dataset/Set3
+# mkdir dataset/Set4
 
 
-unzip TD_RGB_E_Set1.zip -d dataset/Set1/
-unzip TD_RGB_E_Set2.zip -d dataset/Set2/
-unzip TD_RGB_E_Set1.zip -d dataset/Set3/
-unzip TD_RGB_E_Set2.zip -d dataset/Set4/
+unzip TD_RGB_E_Set1.zip -d dataset/
+unzip TD_RGB_E_Set2.zip -d dataset/
+# unzip TD_RGB_E_Set3.zip -d dataset/
+# unzip TD_RGB_E_Set4.zip -d dataset/
 
 mv TD_RGB_E_Set1.zip dataset/
 mv TD_RGB_E_Set2.zip dataset/
-mv TD_RGB_E_Set3.zip dataset/
-mv TD_RGB_E_Set4.zip dataset/
+# mv TD_RGB_E_Set3.zip dataset/
+# mv TD_RGB_E_Set4.zip dataset/
 
 #######################################################################################
 ####################### For getting RGB Around Dataset ################################
