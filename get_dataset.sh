@@ -4,6 +4,33 @@
 # Their Website is http://tdface.ece.tufts.edu/
 # http://tdface.ece.tufts.edu/downloads/
 
+# wget https://storage.googleapis.com/public_release/FEC_dataset.zip
+# mkdir Tufts
+# unzip FEC_dataset -d Tufts/
+#######################################################################################
+####################### For getting RGB Expression Data ###############################
+#######################################################################################
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set1.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set2.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set3.zip
+wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set4.zip
+
+mkdir dataset
+mkdir dataset/Set1
+mkdir dataset/Set2
+mkdir dataset/Set3
+mkdir dataset/Set4
+
+
+unzip TD_RGB_E_Set1.zip -d dataset/Set1/
+unzip TD_RGB_E_Set2.zip -d dataset/Set2/
+unzip TD_RGB_E_Set1.zip -d dataset/Set3/
+unzip TD_RGB_E_Set2.zip -d dataset/Set4/
+
+mv TD_RGB_E_Set1.zip dataset/
+mv TD_RGB_E_Set2.zip dataset/
+mv TD_RGB_E_Set3.zip dataset/
+mv TD_RGB_E_Set4.zip dataset/
 
 #######################################################################################
 ####################### For getting RGB Around Dataset ################################
@@ -30,32 +57,4 @@
 # rm TD_RGB_A_Set2.zip
 # rm TD_RGB_A_Set3.zip
 # rm TD_RGB_A_Set4.zip
-
-
-#######################################################################################
-####################### For getting RGB Expression Data ###############################
-#######################################################################################
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set1.zip
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set2.zip
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set3.zip
-wget http://tdface.ece.tufts.edu/downloads/TD_RGB_E/TD_RGB_E_Set4.zip
-
-mkdir dataset
-mkdir dataset/Set1
-mkdir dataset/Set2
-mkdir dataset/Set3
-mkdir dataset/Set4
-
-
-unzip TD_RGB_E_Set1.zip -d dataset/Set1/
-unzip TD_RGB_E_Set2.zip -d dataset/Set2/
-unzip TD_RGB_E_Set1.zip -d dataset/Set3/
-unzip TD_RGB_E_Set2.zip -d dataset/Set4/
-
-mv TD_RGB_E_Set1.zip dataset/
-mv TD_RGB_E_Set2.zip dataset/
-mv TD_RGB_E_Set3.zip dataset/
-mv TD_RGB_E_Set4.zip dataset/
-
-
 
