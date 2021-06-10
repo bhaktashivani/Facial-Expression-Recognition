@@ -16,22 +16,6 @@ class MyNet(nn.Module):
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
             nn.MaxPool2d(kernel_size=2),
             nn.ReLU(),
-
-            
-#             nn.Conv2d(64, 64, kernel_size=3, padding=1),
-#             nn.Dropout(),
-#             nn.MaxPool2d(kernel_size=2),
-#             nn.ReLU(),
-            
-#             nn.Conv2d(64, 64, kernel_size=3, padding=1),
-# #             nn.BatchNorm2d(64),
-#             nn.MaxPool2d(kernel_size=2),
-#             nn.ReLU(),
-
-            
-#             nn.Conv2d(64, 64, kernel_size=3, padding=1),
-#             nn.MaxPool2d(kernel_size=2),
-#             nn.ReLU(),
             
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.MaxPool2d(kernel_size=2),
@@ -45,20 +29,17 @@ class MyNet(nn.Module):
             nn.Conv2d(128, 128, kernel_size=3, padding=1),
             nn.MaxPool2d(kernel_size=2),
             nn.ReLU(),
-
             
             nn.Conv2d(128, 256, (3,3), padding = 1),
             nn.BatchNorm2d(256),
-#             nn.MaxPool2d(kernel_size=2),
-            nn.ReLU(), #[12, 2304]
+            nn.ReLU(),
             nn.AdaptiveAvgPool2d((7,7)),
-            nn.Flatten()
-                        
+            nn.Flatten()                 
         )
         
         self.classifier = nn.Sequential(
             
-            nn.Linear(7*7*256, 2048), # batch size x 
+            nn.Linear(7*7*256, 2048),
             nn.Dropout(),
             nn.LeakyReLU(),
             nn.Linear(2048, 1024),
@@ -71,8 +52,6 @@ class MyNet(nn.Module):
 
         x = self.layers(x)
         x = x.view(x.size(0), -1)
-#         print(x.shape)
-#         sys.exit()
         x = self.classifier(x)
         scores = x
         
