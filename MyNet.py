@@ -38,7 +38,7 @@ class MyNet(nn.Module):
             nn.ReLU(),
             
             nn.Conv2d(128, 128, kernel_size=3, padding=1),
-#             nn.Dropout(),
+            nn.Dropout(),
             nn.MaxPool2d(kernel_size=2),
             nn.ReLU(),
 
@@ -53,12 +53,7 @@ class MyNet(nn.Module):
             nn.ReLU(), #[12, 2304]
             nn.AdaptiveAvgPool2d((7,7)),
             nn.Flatten()
-            
-#             nn.Conv2d(256,512, (3,3), padding = 1),
-#             nn.BatchNorm2d(512), #[12, 512]
-#             nn.MaxPool2d(kernel_size=2),
-#             nn.ReLU(), #[12, 2304]
-            
+                        
         )
         
         self.classifier = nn.Sequential(
