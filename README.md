@@ -17,11 +17,14 @@ python PrepData.py
 ```
 
 ### Dataset
+
 We used the Tufts Face Dataset for training and testing the ***** model. This Dataset contains over 10,000 images of 74 female and 38 males from more than 15 countries with the age range between 4-70 years old. This dataset contains 7 image modalities, but we only use the Tufts Face Database 2D RGB Around (TDRGBA).
 
 
 ### Final Results 
+
 WoodNet: 97.69% accuracy on test set
+
 MyNet: 96.83% accuracy on test set
 
 
