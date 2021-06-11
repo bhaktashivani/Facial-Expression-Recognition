@@ -21,17 +21,10 @@ We used the Tufts Face Dataset for training and testing the ***** model. This Da
 
 
 ### Final Results 
-WoodNet:
-With no data augmentation - 71.4% accuracy on test set
-With data augmentation - 98.75% accuracy on test set
-
-
-
-### Video link (Youtube unlisted) 
-A 5-min recorded video demo introducing your method and the visualization of the results.
+WoodNet: 97.69% accuracy on test set
+MyNet: 96.83% accuracy on test set
 
 
 ## References 
-[1] http://tdface.ece.tufts.edu/
-[3] https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8554155
-[3] https://arxiv.org/pdf/2011.11257.pdf (WoodNet)
+[1] Karen Panetta et al. “A Comprehensive Database for Benchmarking Imaging Systems”. In IEEE Transactions on Pattern Analysis and Machine Intelligence42.3 (2020), pp. 509–520. DOI:10.1109/TPAMI.2018.2884458. (http://tdface.ece.tufts.edu/) (https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8554155)
+[2] Lars Ankile, Morgan Heggland, and Kjartan Krange. Application of Facial Recognition using Convolutional Neural Networks for Entry Access Control. Nov. 2020. (https://arxiv.org/pdf/2011.11257.pdf)
